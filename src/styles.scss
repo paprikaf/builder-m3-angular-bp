@@ -1,0 +1,24 @@
+@use '@material/web/button/_filled-button.scss' as filled;
+@use '@material/web/button/_outlined-button.scss' as outlined;
+@use '@material/web/button/_elevated-button.scss' as elevated;
+@use '@material/web/button/_text-button.scss' as text;
+
+:root {
+  /* Primary and Secondary colors */
+  --md-sys-color-primary: #6200ea;
+  --md-sys-color-secondary: #03dac6;
+
+  /* Typography */
+  --md-sys-typescale-body-medium-size: 1rem;
+  --md-sys-typescale-body-medium-line-height: 1.5rem;
+
+  /* Shape and Corner Radius */
+  --md-sys-shape-corner-small: 4px;
+  --md-sys-shape-corner-medium: 6px;
+  --md-sys-shape-corner-large: 8px;
+}
+
+/* Apply Material Web styles */
+body {
+  font-family: var(--md-ref-typeface-plain, 'Roboto', sans-serif);
+}

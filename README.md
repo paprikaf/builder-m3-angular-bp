@@ -1,6 +1,32 @@
 # BuilderM3AngularBp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+A boilerplate for Angular Builder projects using Material UI M3 for components, design systems, and theming.
+
+---
+
+## Features
+- **Angular Framework**: Built using the latest Angular version.
+- **Builder.io Integration**: Seamlessly integrates with Builder.io for visual editing.
+- **Material UI M3**: Utilizes Material UI M3 components for design consistency.
+- **Theming**: Fully customizable theming with Material's design tokens.
+
+---
+
+## Prerequisites
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [Angular CLI](https://angular.io/cli)
+- [Git](https://git-scm.com/)
+
+---
+
+## Getting Started
+Follow these steps to run the app locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<username>/builder-m3-angular-bp.git
+cd builder-m3-angular-bp
 
 ## Development server
 

@@ -1,0 +1,18 @@
+<div
+  class="image-hero"
+  [class.full-bleed]="makeFullBleed"
+  [style.background-image]="'url(' + backgroundImage + ')'"
+>
+  <div class="content {{ alignmentClasses }}">
+    <div class="text-content">
+      <h2>{{ title }}</h2>
+      <p [innerHTML]="subTitle"></p>
+    </div>
+    <div class="button-container">
+      <custom-button
+        [label]="buttonText"
+        (click)="navigateTo(buttonLink)"
+      ></custom-button>
+    </div>
+  </div>
+</div>

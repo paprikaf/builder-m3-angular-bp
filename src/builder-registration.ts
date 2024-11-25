@@ -1,6 +1,7 @@
 import { RegisteredComponent } from '@builder.io/sdk-angular';
 import { CustomButtonComponent } from './app/custom-button/custom-button.component';
 import { ImageHeroComponent } from './app/image-hero/image-hero.component';
+
 export const customComponents: RegisteredComponent[] = [
   {
     component: CustomButtonComponent,
@@ -8,16 +9,15 @@ export const customComponents: RegisteredComponent[] = [
     friendlyName: 'M3 Button',
     image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
     inputs: [
-        { name: 'label', type: 'string', defaultValue: 'Click Me' },
-        { name: 'disabled', type: 'boolean', defaultValue: false },
-        {
-          name: 'type',
-          type: 'string',
-          enum: ['elevated', 'filled', 'filled-tonal', 'outlined', 'text', 'icon', 'segmented', 'fab', 'extended-fab'],
-          defaultValue: 'filled',
+      { name: 'label', type: 'string', defaultValue: 'Click Me' },
+      { name: 'disabled', type: 'boolean', defaultValue: false },
+      {
+        name: 'type',
+        type: 'string',
+        enum: ['elevated', 'filled', 'tonal', 'outlined', 'text'],
+        defaultValue: 'filled',
       },
     ],
-    // Optional: additional options for the Builder editor
     defaultStyles: {
       margin: '10px',
       textAlign: 'center',
@@ -37,7 +37,7 @@ export const customComponents: RegisteredComponent[] = [
       {
         name: 'subTitle',
         type: 'richText',
-        defaultValue: '<p>Shoppable essentials for your every day life.</p>',
+        defaultValue: '<p>Shoppable essentials for your everyday life.</p>',
       },
       {
         name: 'buttonText',

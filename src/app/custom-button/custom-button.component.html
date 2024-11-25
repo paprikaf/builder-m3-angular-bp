@@ -1,35 +1,42 @@
-<md-outlined-button
-  *ngIf="type === 'outlined'"
-  [disabled]="disabled"
-  (click)="handleClick()"
->
-  {{ label }}
-</md-outlined-button>
-<md-filled-button
-  *ngIf="type === 'filled'"
-  [disabled]="disabled"
-  (click)="handleClick()"
->
-  {{ label }}
-</md-filled-button>
-<md-elevated-button
-  *ngIf="type === 'elevated'"
-  [disabled]="disabled"
-  (click)="handleClick()"
->
-  {{ label }}
-</md-elevated-button>
-<md-tonal-button
-  *ngIf="type === 'tonal'"
-  [disabled]="disabled"
-  (click)="handleClick()"
->
-  {{ label }}
-</md-tonal-button>
-<md-text-button
-  *ngIf="type === 'text'"
-  [disabled]="disabled"
-  (click)="handleClick()"
->
-  {{ label }}
-</md-text-button>
+<ng-container>
+  <md-outlined-button
+    *ngIf="type === 'outlined'"
+    [disabled]="disabled"
+    class="utility-border-radius-md utility-padding"
+    (click)="handleClick()"
+  >
+    {{ label }}
+  </md-outlined-button>
+  <md-filled-button
+    *ngIf="type === 'filled'"
+    [disabled]="disabled"
+    class="utility-border-radius-md utility-padding"
+    (click)="handleClick()"
+  >
+    {{ label }}
+  </md-filled-button>
+  <md-elevated-button
+    *ngIf="type === 'elevated'"
+    [disabled]="disabled"
+    class="utility-border-radius-md utility-padding"
+    (click)="handleClick()"
+  >
+    {{ label }}
+  </md-elevated-button>
+  <md-tonal-button
+    *ngIf="type === 'tonal'"
+    [disabled]="disabled"
+    class="utility-border-radius-md utility-padding"
+    (click)="handleClick()"
+  >
+    {{ label }}
+  </md-tonal-button>
+  <md-text-button
+    *ngIf="type === 'text'"
+    [disabled]="disabled"
+    class="utility-border-radius-md utility-padding"
+    (click)="handleClick()"
+  >
+    {{ label }}
+  </md-text-button>
+</ng-container>

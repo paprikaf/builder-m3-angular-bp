@@ -1,24 +1,91 @@
 @use '@material/web/button/_filled-button.scss' as filled;
 @use '@material/web/button/_outlined-button.scss' as outlined;
 @use '@material/web/button/_elevated-button.scss' as elevated;
+@use '@material/web/button/_filled-tonal-button.scss' as tonal;
 @use '@material/web/button/_text-button.scss' as text;
 
 :root {
-  /* Primary and Secondary colors */
-  --md-sys-color-primary: #6200ea;
-  --md-sys-color-secondary: #03dac6;
+  /* Primary and Secondary Colors */
+  --md-sys-color-primary: #6200ea; /* Purple */
+  --md-sys-color-primary-container: #bb86fc; /* Light Purple */
+  --md-sys-color-secondary: #03dac6; /* Teal */
+  --md-sys-color-secondary-container: #018786; /* Dark Teal */
+  --md-sys-color-on-primary: #ffffff; /* White */
+  --md-sys-color-on-secondary: #000000; /* Black */
+
+  /* Error Colors */
+  --md-sys-color-error: #b00020; /* Red */
+  --md-sys-color-on-error: #ffffff; /* White */
+
+  /* Surface Colors */
+  --md-sys-color-surface: #ffffff; /* White */
+  --md-sys-color-surface-variant: #eeeeee; /* Light Gray */
+  --md-sys-color-on-surface: #000000; /* Black */
+
+  /* Background Colors */
+  --md-sys-color-background: #f5f5f5; /* Light Gray */
+  --md-sys-color-on-background: #000000; /* Black */
 
   /* Typography */
   --md-sys-typescale-body-medium-size: 1rem;
   --md-sys-typescale-body-medium-line-height: 1.5rem;
+  --md-sys-typescale-label-large-size: 0.875rem;
+  --md-sys-typescale-label-large-line-height: 1.25rem;
 
   /* Shape and Corner Radius */
   --md-sys-shape-corner-small: 4px;
-  --md-sys-shape-corner-medium: 6px;
-  --md-sys-shape-corner-large: 8px;
+  --md-sys-shape-corner-medium: 8px;
+  --md-sys-shape-corner-large: 12px;
+
+  /* Elevation */
+  --md-sys-elevation-level1: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  --md-sys-elevation-level2: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  --md-sys-elevation-level3: 0px 8px 16px rgba(0, 0, 0, 0.10);
 }
 
-/* Apply Material Web styles */
-body {
-  font-family: var(--md-ref-typeface-plain, 'Roboto', sans-serif);
+/* Button Variants */
+md-outlined-button {
+  --md-outlined-button-container-color: transparent;
+  --md-outlined-button-outline-color: var(--md-sys-color-primary);
+  --md-outlined-button-label-text-color: var(--md-sys-color-primary);
+  border: 1px solid var(--md-sys-color-primary);
+}
+
+md-filled-button {
+  --md-filled-button-container-color: var(--md-sys-color-primary);
+  --md-filled-button-label-text-color: var(--md-sys-color-on-primary);
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+
+md-elevated-button {
+  --md-elevated-button-container-color: var(--md-sys-color-surface);
+  --md-elevated-button-label-text-color: var(--md-sys-color-primary);
+  box-shadow: var(--md-sys-elevation-level1);
+}
+
+md-tonal-button {
+  --md-tonal-button-container-color: var(--md-sys-color-primary-container);
+  --md-tonal-button-label-text-color: var(--md-sys-color-on-primary);
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary);
+}
+
+md-text-button {
+  --md-text-button-container-color: transparent;
+  --md-text-button-label-text-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-primary);
+}
+
+/* Utility Classes for Consistency */
+.utility-border-radius-md {
+  border-radius: var(--md-sys-shape-corner-medium);
+}
+
+.utility-padding {
+  padding: 1rem;
+}
+
+.utility-text-center {
+  text-align: center;
 }

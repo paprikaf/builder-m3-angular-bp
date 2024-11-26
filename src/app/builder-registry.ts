@@ -3,6 +3,7 @@ import { CustomButtonComponent } from './components/custom-button/custom-button.
 import { ImageHeroComponent } from './components/image-hero/image-hero.component';
 import { FeatureCardComponent } from './components/feature-cards/feature-card.component';
 import { TextHeroComponent } from './components/text-hero/text-hero.component';
+import { AnchorWrapperComponent } from './components/anchor-wrapper/anchor-wrapper.component';
 
 export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
   {
@@ -157,6 +158,19 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
       {
         name: 'subTitle',
         type: 'richText',
+      },
+    ],
+  },
+  {
+    component: AnchorWrapperComponent,
+    name: 'Anchor Wrapper',
+    canHaveChildren: true, // Allows the component to contain child blocks
+    inputs: [
+      {
+        name: 'anchorId',
+        type: 'string',
+        defaultValue: 'default-anchor',
+        helperText: 'Unique anchor ID for linking',
       },
     ],
   },

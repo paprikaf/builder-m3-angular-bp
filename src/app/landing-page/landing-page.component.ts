@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Content, BuilderContent  } from '@builder.io/sdk-angular';
-import { customComponents } from '../../builder-registration'; 
+import { CUSTOM_COMPONENTS } from '../builder-registry'; 
 
 @Component({
   selector: 'app-landing-page',
@@ -15,7 +15,7 @@ import { customComponents } from '../../builder-registration';
         [model]="'page'"
         [content]="content"
         [apiKey]="apiKey"
-        [customComponents]="customComponents">
+        [customComponents]="CUSTOM_COMPONENTS">
       </builder-content>
     </ng-container>
     <ng-template #notFound>
@@ -26,7 +26,7 @@ import { customComponents } from '../../builder-registration';
 export class LandingPageComponent {
   apiKey = 'bdd96eed1a2648e789e2e0d740aca175'; // Replace with your API key
   content: BuilderContent | null = null;
-  customComponents = customComponents;
+  CUSTOM_COMPONENTS = CUSTOM_COMPONENTS;
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {

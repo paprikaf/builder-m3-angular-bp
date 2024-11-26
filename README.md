@@ -9,6 +9,7 @@ A boilerplate for Angular gen2 sdk Builder projects using Material UI M3 for com
 - **Builder.io Integration**: Seamlessly integrates with Builder.io for visual editing.
 - **Material UI M3**: Utilizes Material UI M3 components for design consistency.
 - **Theming**: Fully customizable theming with Material's design tokens.
+- **Figma Mapping**: Mapped Figma designs to Angular components for a seamless design-to-code workflow.
 
 ---
 
@@ -45,21 +46,21 @@ Navigate to http://localhost:4200/. The application will automatically reload if
 ## Development server
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
-### Code scaffolding
+## Mapped Components
+The following components have been mapped from Figma to Angular using Builder.io:
+
+### TextHero Component
+- A flexible text hero component with support for a title and optional subtitle
+- Mapped to the Figma design: TextHero in Figma
+
+### IconCard Component  
+- A feature card with an icon, title, and description
+- Mapped to the Figma design: IconCard in Figma
+
+*For more details on the Figma mappings, check the src/mappings directory.*
+
+## Development Server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Code Scaffolding
 Run the following command to generate a new component:
-```bash
-ng generate component component-name
-```
-You can also use:
-```bash
-ng generate directive|pipe|service|class|guard|interface|enum|module
-```
-
-### Build
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-```bash
-ng build
-```
-
-## Additional Information
-For more detailed information on how to use Builder.io, refer to the [Builder.io Documentation](https://www.builder.io/c/docs).

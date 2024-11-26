@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"ng serve\" \"npx builder-dev-tools\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:builder-m3-angular-bp": "node dist/builder-m3-angular-bp/server/server.mjs"
+    "serve:ssr:builder-m3-angular-bp": "node dist/builder-m3-angular-bp/server/server.mjs",
+    "builder-dev": "concurrently \"ng serve\" \"npx builder-dev-tools\""
   },
   "private": true,
   "dependencies": {
@@ -21,10 +22,12 @@
     "@angular/platform-server": "^17.3.0",
     "@angular/router": "^17.3.0",
     "@angular/ssr": "^17.3.11",
+    "@builder.io/dev-tools": "^1.1.38",
     "@builder.io/sdk-angular": "^0.17.0",
     "@material/web": "^2.2.0",
     "@webcomponents/custom-elements": "^1.6.0",
     "@webcomponents/shadycss": "^1.11.2",
+    "concurrently": "^9.1.0",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

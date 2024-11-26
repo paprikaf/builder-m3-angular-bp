@@ -3,6 +3,7 @@
 @use '@material/web/button/_elevated-button.scss' as elevated;
 @use '@material/web/button/_filled-tonal-button.scss' as tonal;
 @use '@material/web/button/_text-button.scss' as text;
+@use '@material/web/elevation/elevation';
 
 :root {
   /* Primary and Secondary Colors */

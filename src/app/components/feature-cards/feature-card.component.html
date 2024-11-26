@@ -1,0 +1,32 @@
+<section class="features-section">
+  <header class="features-header">
+    <h1 class="features-title">{{titleText}}</h1>
+  </header>
+  <main class="features-grid">
+    <article
+      *ngFor="let feature of features"
+      class="feature-card"
+      (click)="handleFeatureClick(feature.id)"
+      [attr.data-feature-id]="feature.id"
+      role="button"
+      tabindex="0"
+      (keydown.enter)="handleFeatureClick(feature.id)"
+    >
+      <div
+        class="feature-icon-wrapper"
+        [style.backgroundColor]="feature.backgroundColor"
+        [attr.aria-hidden]="true"
+      >
+        <img
+          [src]="feature.icon"
+          [style.width]="feature.iconWidth"
+          [alt]="feature.title + ' icon'"
+          class="feature-icon"
+          loading="lazy"
+        />
+      </div>
+      <h2 class="feature-heading">{{feature.title}}</h2>
+      <p class="feature-description">{{feature.description}}</p>
+    </article>
+  </main>
+</section>

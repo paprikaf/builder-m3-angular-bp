@@ -9,7 +9,7 @@ A boilerplate for Angular gen2 sdk Builder projects using Material UI M3 for com
 - **Builder.io Integration**: Seamlessly integrates with Builder.io for visual editing.
 - **Material UI M3**: Utilizes Material UI M3 components for design consistency.
 - **Theming**: Fully customizable theming with Material's design tokens.
-- **Figma Mapping**: Mapped Figma designs to Angular components for a seamless design-to-code workflow.
+- **Figma Mapping**: Mapped Figma designs to Angular components for a seamless design-to-code workflow. [Figma Mappings Demo File](https://www.figma.com/design/Bs1LsFDwuyBqd1ONmobru7/Demo-mapping?node-id=0-1&node-type=canvas&t=kVNsay0SubKoxUPa-0)
 
 ---
 
@@ -24,8 +24,7 @@ Before you begin, ensure you have the following installed:
 ## Getting Started
 Follow these steps to run the app locally:
 
-### 1. Clone the repository
-```bash
+### 1. Clone the repository```bash
 git clone https://github.com/<username>/builder-m3-angular-bp.git
 cd builder-m3-angular-bp
 ```

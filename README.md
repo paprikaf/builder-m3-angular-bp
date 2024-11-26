@@ -63,3 +63,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code Scaffolding
 Run the following command to generate a new component:
+```bash
+ng generate component component-name
+```

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Content, BuilderContent  } from '@builder.io/sdk-angular';
 import { CUSTOM_COMPONENTS } from '../builder-registry'; 
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-landing-page',
@@ -24,7 +25,7 @@ import { CUSTOM_COMPONENTS } from '../builder-registry';
   `,
 })
 export class LandingPageComponent {
-  apiKey = 'bdd96eed1a2648e789e2e0d740aca175'; // Replace with your API key
+  apiKey = environment.builderApiKey ? environment.builderApiKey :'bdd96eed1a2648e789e2e0d740aca175'; // Replace with your API key
   content: BuilderContent | null = null;
   CUSTOM_COMPONENTS = CUSTOM_COMPONENTS;
   constructor(private route: ActivatedRoute) {}

@@ -12,7 +12,6 @@ export const routes: Routes = [{
 {
   path: 'figma-imports',
   component: FigmaImportsPage,
-  // resolve: { content: figmaImportsPageResolver }, // Fallback to LandingPageComponent
 },
 {
   path: '**', // Wildcard route for all unmatched paths

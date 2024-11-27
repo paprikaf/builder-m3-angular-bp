@@ -28,11 +28,9 @@ export class FigmaImportsPage {
       apiKey: this.apiKey,
       options: getBuilderSearchParams(searchParams),
     });
-    console.log('JELLON', builderContent)
     
     if (builderContent) {
       this.content = builderContent;
     }
-    console.log('Builder Content:', this.content, this.apiKey, this.model, this.customComponents);
   }
 }

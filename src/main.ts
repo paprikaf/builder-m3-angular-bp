@@ -6,7 +6,4 @@ import { routes } from "./app/app.routes";
 bootstrapApplication(AppComponent, {
     providers: [provideRouter(routes)],
 }).catch((err) => console.error(err));
-
-builderDevTools().catch((err: Error) =>
-    console.error("Error starting dev tools:", err)
-  );
+builderDevTools().catch((err: Error) => console.error("Error starting dev tools:", err));

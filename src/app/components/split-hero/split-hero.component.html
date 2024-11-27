@@ -1,0 +1,21 @@
+<section class="split-hero" role="region" aria-labelledby="split-hero-title">
+  <div class="content-panel">
+    <h2 id="split-hero-title" class="title">{{title}}</h2>
+    <p class="description">{{description}}</p>
+    <custom-button
+      [label]="buttonText"
+      [type]="buttonType"
+      (click)="handleLearnMore()"
+      class="action-button"
+      aria-label="Learn more about our sustainability commitment"
+    >
+    </custom-button>
+  </div>
+  <img
+    [src]="imageSrc"
+    [alt]="imageAlt"
+    loading="lazy"
+    class="hero-image"
+    role="img"
+  />
+</section>

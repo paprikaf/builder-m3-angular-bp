@@ -65,6 +65,12 @@ The following components have been mapped from Figma to Angular using Builder.io
 
 *For more details on the Figma mappings, check the src/mappings directory.*
 
+To test Compoment mapping yourself, you can go to this figma design: 
+https://www.figma.com/design/4HuB7YOzgudMte14fCcuwK/Untitled?node-id=0-1&node-type=canvas&t=gcGjMuWQoSRWiFho-0
+
+You can then use the Builder Plugin to log into your Builder space and map components following our docs here: https://www.builder.io/c/docs/cli-mapping
+
+
 ## Development Server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 

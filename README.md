@@ -24,7 +24,8 @@ Before you begin, ensure you have the following installed:
 ## Getting Started
 Follow these steps to run the app locally:
 
-### 1. Clone the repository```bash
+### 1. Clone the repository
+```bash
 git clone https://github.com/<username>/builder-m3-angular-bp.git
 cd builder-m3-angular-bp
 ```
@@ -34,16 +35,22 @@ cd builder-m3-angular-bp
 npm install
 ```
 
-### 3. Start the development server
+### 3. Install Builder Dev Tools
+Install Builder dev tools following the prompts and examples here: https://www.builder.io/c/docs/devtools
 ```bash
-ng serve
+npm init builder.io@latest
+```
+
+### 4. Start the development server with  Devltools
+```bash
+npm run builder-dev
 ```
 Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
 ---
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files. Running `npm run builder-dev` will also ensure builder devtools is running
 
 ## Mapped Components
 The following components have been mapped from Figma to Angular using Builder.io:

@@ -10,25 +10,14 @@ import { environment } from '../../environments/environment';
   selector: 'app-landing-page',
   standalone: true,
   imports: [Content, CommonModule],
-  template: `
-    <h1>Landing Page Loaded</h1>
-    <ng-container *ngIf="content; else notFound">
-      <builder-content
-        [model]="'page'"
-        [content]="content"
-        [apiKey]="apiKey"
-        [customComponents]="CUSTOM_COMPONENTS">
-      </builder-content>
-    </ng-container>
-    <ng-template #notFound>
-      <div>404 - Content not found</div>
-    </ng-template>
-  `,
+  templateUrl: './landing-page.component.html',
 })
+
 export class LandingPageComponent {
   apiKey = environment.builderApiKey || 'bdd96eed1a2648e789e2e0d740aca175'; // Replace with your API key
+  model = 'page';
   content: BuilderContent | null = null;
-  CUSTOM_COMPONENTS = CUSTOM_COMPONENTS;
+  customComponents = CUSTOM_COMPONENTS;
 
   // SEO metadata fields
   metaTitle: string = 'Default Title';

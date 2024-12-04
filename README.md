@@ -9,7 +9,7 @@ A boilerplate for Angular gen2 sdk Builder projects using Material UI M3 for com
 - **Builder.io Integration**: Seamlessly integrates with Builder.io for visual editing.
 - **Material UI M3**: Utilizes Material UI M3 components for design consistency.
 - **Theming**: Fully customizable theming with Material's design tokens.
-- **Figma Mapping**: Mapped Figma designs to Angular components for a seamless design-to-code workflow. [Figma Mappings Demo File](https://www.figma.com/design/Bs1LsFDwuyBqd1ONmobru7/Demo-mapping?node-id=0-1&node-type=canvas&t=kVNsay0SubKoxUPa-0)
+- **Figma Mapping**: Mapped Figma designs to Angular components for a seamless design-to-code workflow. [Figma Mappings Demo File](https://www.figma.com/design/4HuB7YOzgudMte14fCcuwK/Untitled?node-id=0-1&t=Pae2HLXHsUKIqKHI-1)
 
 ---
 
@@ -66,7 +66,7 @@ The following components have been mapped from Figma to Angular using Builder.io
 *For more details on the Figma mappings, check the src/mappings directory.*
 
 To test Compoment mapping yourself, you can go to this figma design: 
-https://www.figma.com/design/4HuB7YOzgudMte14fCcuwK/Untitled?node-id=0-1&node-type=canvas&t=gcGjMuWQoSRWiFho-0
+[Figma Mappings Demo File](https://www.figma.com/design/4HuB7YOzgudMte14fCcuwK/Untitled?node-id=0-1&t=Pae2HLXHsUKIqKHI-1)
 
 You can then use the Builder Plugin to log into your Builder space and map components following our docs here: https://www.builder.io/c/docs/cli-mapping
 

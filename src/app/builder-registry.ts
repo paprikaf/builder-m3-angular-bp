@@ -6,8 +6,25 @@ import { FeatureCardComponent } from "./components/feature-cards/feature-card.co
 import { ImageHeroComponent } from "./components/image-hero/image-hero.component";
 import { SplitHeroComponent } from "./components/split-hero/split-hero.component";
 import { TextHeroComponent } from "./components/text-hero/text-hero.component";
+import { CustomCodeComponent } from "./components/custom-code/custom-code-component";
 
 export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
+  {
+    component: CustomCodeComponent,
+    name: 'Custom Code',
+    inputs: [
+      {
+        name: 'code',
+        type: 'string',
+        defaultValue: '',
+      },
+      {
+        name: 'scriptsClientOnly',
+        type: 'boolean',
+        defaultValue: false,
+      }
+    ],
+  },
   {
     component: AnchorWrapperComponent,
     name: "Anchor Wrapper",
